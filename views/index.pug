@@ -2,4 +2,13 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to new world #{title}
+  button(type="button", class="btn btn-primary" onclick="update()") Press Me
+  div(id="target" class="container text-center m-2 p-3" style="color:orange;font-weight:600; background-color:white;") Display
+  script. 
+      var client_count=0 
+      function update(){
+        client_count++;
+        document.getElementById("target").innerHTML=`Value now ${client_count}`
+      } 
+  a(href="/fishes") go to fishes
