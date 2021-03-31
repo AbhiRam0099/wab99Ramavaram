@@ -5,7 +5,7 @@ block content
   - let vechile=[{vechilename:"Audi",model:"A8",classification:"sports",price:50000},{vechilename:"Lambogini",model:"s6",classification:"sports",price:80000},{vechilename:"BMW",model:"500d",classification:"sports",price:25000}]
   div(class="container-fluid mt-3")
   div(class="row")
-    each vechile,index in vechiles
+    each vechile,index in vechile
         div(class="col-sm-4 bg-info m-1 p-3" style=("font-weight:bolder")  onclick=`buy(${index})`) #{vechile.vechilename} - #{vechile.model} - #{vechile.classification} - #{vechile.price}
   script.
      
